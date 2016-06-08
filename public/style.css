@@ -2,6 +2,23 @@ body {
       font: 1.55em Helvetica, Arial;
 }
 
+.pull-right > .dropdown-menu {
+      background: #ecf9f2;
+}
+
+.dropdown-menu > li > a {
+      color: #000033;
+}
+
+.glyph {
+      padding: 0 1em;
+}
+
+.drop {
+      padding: 0 1em;
+      vertical-align: middle;
+}
+
 .give {
       padding-left: 3em;
 }
