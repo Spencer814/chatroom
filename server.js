@@ -40,11 +40,12 @@ io.on('connection', function (socket) {
     });
     
     socket.broadcast.emit('enter', 'A new user joined this chat');
+    console.log(socket.id);
     
     socket.emit('welcome', { message: 'Welcome!', id: socket.id }, sendTime());
 
     socket.on('message', function(message) {
-        console.log('Received message:', message);
+        console.log('Received message:', socket.id, message);
         socket.broadcast.emit('message', message);
     });
 });
